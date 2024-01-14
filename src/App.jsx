@@ -45,7 +45,7 @@ function App() {
       const gastosFiltrados = gastos.filter(gasto => gasto.categoria === filtro)
       setGastosFiltrados(gastosFiltrados)
     }
-  },[filtro])
+  },[filtro, gastos])
 
 
   useEffect(() => {
